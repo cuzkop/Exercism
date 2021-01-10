@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-  main () {
-    name=$1
+main () {
+  name=$1
 
-    if [ $# = 0 ]; then
-      name="you"
-    fi
+  if (( $# == 0 )) ; then
+    name="you"
+  fi
 
-    echo "One for $name, one for me."
-  }
+  echo "One for $name, one for me."
+}
 
-  # call main with all of the positional arguments
-  main "$@"
+# call main with all of the positional arguments
+main "$@"
 
