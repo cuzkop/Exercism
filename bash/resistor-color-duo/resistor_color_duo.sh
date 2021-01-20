@@ -2,7 +2,7 @@
 
   main () {
     
-    declare -A colors
+    local -A colors
 
     colors=(
       ["Black"]="0"
